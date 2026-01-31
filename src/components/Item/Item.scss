@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #2B2930;
+  border: 1px solid #CAC4D0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &.selected {
+    &::after,
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 50%;
+      width: 3px;
+      height: 100%;
+      transform: translateX(-50%);
+      background-color: red;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.image {
+  width: 100%;
+}
