@@ -4,11 +4,6 @@ export const LOCAL_STORAGE_KEY = 'jams';
 
 export const JAMS: ItemType[] = [
   {
-    name: 'Лимон и Лайм',
-    image: { src: '8249217623.webp', alt: 'Лимон и Лайм', loading: 'lazy' },
-    isSelected: false,
-  },
-  {
     name: 'Клубника и Годжи',
     image: { src: '8249895546.webp', alt: 'Клубника и Годжи', loading: 'lazy' },
     isSelected: true,
@@ -26,6 +21,11 @@ export const JAMS: ItemType[] = [
   {
     name: 'Абрикос и Чиа',
     image: { src: '8255702469.webp', alt: 'Абрикос и Чиа', loading: 'lazy' },
+    isSelected: false,
+  },
+  {
+    name: 'Лимон и Лайм',
+    image: { src: '8249217623.webp', alt: 'Лимон и Лайм', loading: 'lazy' },
     isSelected: false,
   },
   {
@@ -158,11 +158,6 @@ export const JAMS: ItemType[] = [
     isSelected: false,
   },
   {
-    name: 'Чернослив',
-    image: { src: '8277030107.webp', alt: 'Чернослив', loading: 'lazy' },
-    isSelected: true,
-  },
-  {
     name: 'Королевский финик и Апельсин',
     image: {
       src: '8276807712.webp',
@@ -170,6 +165,11 @@ export const JAMS: ItemType[] = [
       loading: 'lazy',
     },
     isSelected: false,
+  },
+  {
+    name: 'Чернослив',
+    image: { src: '8277030107.webp', alt: 'Чернослив', loading: 'lazy' },
+    isSelected: true,
   },
   {
     name: 'Сушеный инжир',
