@@ -1,7 +1,7 @@
 import './App.scss';
 import { JAMS, LOCAL_STORAGE_KEY } from './constants.ts';
-import { Item } from './components/Item';
-import { useLocalStorage } from './hooks/useLocalStorage.tsx';
+import { Item } from '@components/Item';
+import { useLocalStorage } from '@hooks/useLocalStorage';
 
 function App() {
   const [ls, saveToLs] = useLocalStorage(LOCAL_STORAGE_KEY, [] as string[]);
