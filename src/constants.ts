@@ -163,6 +163,15 @@ export const JAMS: ItemType[] = [
     isSelected: true,
   },
   {
+    name: 'Королевский финик и Апельсин',
+    image: {
+      src: '8276807712.webp',
+      alt: 'Королевский финик и Апельсин',
+      loading: 'lazy',
+    },
+    isSelected: false,
+  },
+  {
     name: 'Сушеный инжир',
     image: {
       src: '8277070784.webp',
