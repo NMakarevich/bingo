@@ -36,9 +36,10 @@ function App() {
     <>
       <h1>St.Dalfour Bingo</h1>
       <div className={'container'}>
-        {JAMS.map((jam) => (
-          <Item ls={ls} saveToLs={saveToLs} item={jam} key={jam.image.src} />
-        ))}
+        {!Array.isArray(ls) &&
+          JAMS.map((jam) => (
+            <Item ls={ls} saveToLs={saveToLs} item={jam} key={jam.image.src} />
+          ))}
       </div>
     </>
   );
