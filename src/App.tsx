@@ -5,8 +5,16 @@ import { useLocalStorage } from '@hooks/useLocalStorage';
 import { useEffect } from 'react';
 import type { ItemType } from '@components/Item/types.ts';
 
+const DEFAULT_LS = JAMS.reduce(
+  (acc, currentValue) => {
+    acc[currentValue.image.src] = currentValue;
+    return acc;
+  },
+  {} as { [p: string]: ItemType },
+);
+
 function App() {
-  const [ls, saveToLs] = useLocalStorage(LOCAL_STORAGE_KEY, {});
+  const [ls, saveToLs] = useLocalStorage(LOCAL_STORAGE_KEY, DEFAULT_LS);
 
   useEffect(() => {
     if (Array.isArray(ls)) {

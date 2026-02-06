@@ -6,13 +6,13 @@ export const JAMS: ItemType[] = [
   {
     name: 'Клубника и Годжи',
     image: { src: '8249895546.webp', alt: 'Клубника и Годжи', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
     name: 'Черника и Асаи',
     image: { src: '8253793863.webp', alt: 'Черника и Асаи', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
@@ -54,7 +54,7 @@ export const JAMS: ItemType[] = [
   {
     name: 'Черная сморода',
     image: { src: '8272492846.webp', alt: 'Черная сморода', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
@@ -66,7 +66,7 @@ export const JAMS: ItemType[] = [
   {
     name: 'Черная вишня',
     image: { src: '8272597142.webp', alt: 'Черная вишня', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
@@ -78,13 +78,13 @@ export const JAMS: ItemType[] = [
   {
     name: 'Клубника',
     image: { src: '8272722157.webp', alt: 'Клубника', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
     name: 'Черника',
     image: { src: '8272755538.webp', alt: 'Черника', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
@@ -94,7 +94,7 @@ export const JAMS: ItemType[] = [
       alt: 'Апельсиновый мармелад',
       loading: 'lazy',
     },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
@@ -124,13 +124,13 @@ export const JAMS: ItemType[] = [
       alt: 'Груша',
       loading: 'lazy',
     },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
     name: 'Клюква и Черника',
     image: { src: '8273389993.webp', alt: 'Клюква и Черника', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
@@ -146,25 +146,25 @@ export const JAMS: ItemType[] = [
   {
     name: 'Четыре фрукта',
     image: { src: '8273440087.webp', alt: 'Четыре фрукта', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
     name: 'Слива',
     image: { src: '8273462275.webp', alt: 'Слива', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
     name: 'Инжир',
     image: { src: '8273478712.webp', alt: 'Инжир', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
     name: 'Виноград',
     image: { src: '8273518343.webp', alt: 'Виноград', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
@@ -196,7 +196,7 @@ export const JAMS: ItemType[] = [
   {
     name: 'Чернослив',
     image: { src: '8277030107.webp', alt: 'Чернослив', loading: 'lazy' },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
   {
@@ -206,7 +206,7 @@ export const JAMS: ItemType[] = [
       alt: 'Сушеный инжир',
       loading: 'lazy',
     },
-    isSelected: true,
+    isSelected: false,
     rating: 0,
   },
 ];
