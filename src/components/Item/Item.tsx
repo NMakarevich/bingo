@@ -5,7 +5,7 @@ import {
   useMemo,
   useState,
 } from 'react';
-import type { ItemType } from './types.ts';
+import type { ItemType, LocalStorageType } from './types.ts';
 
 import './Item.scss';
 import { Star } from '@components/Star';
@@ -17,8 +17,8 @@ export const Item = ({
   saveToLs,
 }: {
   item: ItemType;
-  ls: { [p: string]: ItemType };
-  saveToLs: (value: { [p: string]: ItemType }) => void;
+  ls: LocalStorageType;
+  saveToLs: (value: LocalStorageType) => void;
 }): ReactElement => {
   const { image, name } = item;
   const [isSelected, setIsSelected] = useState(ls[image.src].isSelected);

@@ -8,3 +8,7 @@ export type ItemType = {
   name: string;
   rating: number;
 };
+
+export type LocalStorageType = {
+  [key: string]: ItemType;
+};
