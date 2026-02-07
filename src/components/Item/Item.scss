@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   padding: 20px;
   background: #2B2930;
@@ -55,11 +56,4 @@
 
 .image {
   width: 80%;
-}
-
-@media (max-width: 480px) {
-  .item-rating_star svg {
-    width: 32px;
-    height: 32px;
-  }
 }

@@ -1,0 +1,16 @@
+.rating {
+  display: flex;
+  gap: 10px;
+
+  &-star {
+    color: #FDD835;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .rating-star svg {
+    width: 32px;
+    height: 32px;
+  }
+}
