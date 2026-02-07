@@ -34,13 +34,12 @@ export const Item = ({
   const updateRating = useCallback(
     (event: MouseEvent, index: number) => {
       event.stopPropagation();
-      if (!isSelected) return;
       setItemRating(index + 1);
       const copyLs = { ...ls };
       copyLs[image.src].rating = index + 1;
       saveToLs(copyLs);
     },
-    [image.src, isSelected, ls, saveToLs],
+    [image.src, ls, saveToLs],
   );
 
   const rating = useMemo(() => {
