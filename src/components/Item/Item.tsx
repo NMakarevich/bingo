@@ -2,7 +2,6 @@ import {
   type MouseEvent,
   type ReactElement,
   useCallback,
-  useMemo,
   useState,
 } from 'react';
 import type { ItemType, LocalStorageType } from './types.ts';
@@ -42,11 +41,11 @@ export const Item = ({
     [image.src, ls, saveToLs],
   );
 
-  const rating = useMemo(() => {
-    return new Array(MAX_RATING)
-      .fill(0)
-      .map((_, i) => (i + 1 <= itemRating ? 1 : 0));
-  }, [itemRating]);
+  const rating = new Array(MAX_RATING).fill(0);
+
+  const isFilled = (index: number) => {
+    return index + 1 <= itemRating;
+  };
 
   return (
     <div
@@ -61,13 +60,13 @@ export const Item = ({
         loading={image.loading}
       />
       <div className={'item-rating'}>
-        {rating.map((filled, index) => (
+        {rating.map((_, index) => (
           <span
             className={'item-rating_star'}
             key={index}
             onClick={(event) => updateRating(event, index)}
           >
-            <Star filled={!!filled} />
+            <Star filled={isFilled(index)} />
           </span>
         ))}
       </div>
