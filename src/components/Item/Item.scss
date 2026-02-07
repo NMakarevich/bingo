@@ -42,14 +42,24 @@
   }
 
   &-rating {
+    display: flex;
+    gap: 10px;
     margin-top: auto;
   }
 
   &-rating_star {
     color: #FDD835;
+    cursor: pointer;
   }
 }
 
 .image {
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .item-rating_star svg {
+    width: 32px;
+    height: 32px;
+  }
 }
